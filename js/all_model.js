@@ -611,7 +611,8 @@ loaderCandTall.load('model/chairs_tables/TABLE_AND_CHAIR.glb', function (gltf) {
         const loading_fill = document.querySelector('.line');
 
         // loading_text.width = percent * 5 + "px";
-        loading_fill.style.width = percent * 10 + "%";
+        // loading_fill.style.width = percent * 100 + "%";
+        loading_fill.setAttribute('style', 'width:' + (percent * 100) + '% !important;');
     }
 );
 
