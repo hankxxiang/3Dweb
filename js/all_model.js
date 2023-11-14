@@ -606,12 +606,14 @@ loaderCandTall.load('model/chairs_tables/TABLE_AND_CHAIR.glb', function (gltf) {
     // loading 畫面
     function (load) {
         const percent = load.loaded / load.total;
+        console.log(percent);
         const loading_text = window.getComputedStyle(document.querySelector('.loader'), '::before');
         // .getPropertyValue('content');
         const loading_fill = document.querySelector('.line');
 
         // loading_text.width = percent * 5 + "px";
         loading_fill.style.width = percent * 100 + "px";
+        
     }
 );
 
